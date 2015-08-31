@@ -6,7 +6,7 @@ CREATE TABLE `users_relationships` (
   `from_user_id` INT(10) NOT NULL,
   `to_user_id` INT(10) unsigned NOT NULL,
   `users_relationship_type` VARCHAR(10) NOT NULL,
-  `users_relationship_timestamp` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `users_relationship_timestamp` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (`users_relationship_id`),
   INDEX `from_user_id` (`from_user_id`),
   INDEX `to_user_id` (`to_user_id`),
