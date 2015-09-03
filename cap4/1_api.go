@@ -162,7 +162,7 @@ func UsersRetrieve(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, string(output))
 }
 
-func StartServer() {
+func main() {
 	db, err := sql.Open("mysql", "root@/social_network")
 	if err != nil {
 	}
